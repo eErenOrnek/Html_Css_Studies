@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display: "flex"</title>
+    <link rel="stylesheet" href="flexStyle.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#">Wissen Akademie</a>
+            </div>
+            <div class="tabs">
+                <ul>
+                    <li><a href="">ANA SAYFA</a></li>
+                    <li><a href="">HTML</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">BOOTSTRAP</a></li>
+                    <li><a href="">JAVASCRIPT</a></li>
+                    <li><a href="">JQUERY</a></li>
+                    <li><a href="">HAKKIMDA</a></li>
+                    <li><a href="">İLETİŞİM</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="content">
+            <h1>"display: 'flex'" kullanımı: </h1>
+            <p>
+                HTML'de oluşturulan 'div' elementleri genişlikleri ne kadar olursa olsun default olarak bulundukları satırın tamamını kapsayacak şekilde tasarlanmışlardır. 
+                Dolayısıyla oluşturulan bu 'div'in ardından oluşturulan herhangi bir element otomatik olarak bir alt satıra konumlandırılır. Bu özellik yaptığımız tasarımlarda
+                element konumlandırması açısından bizi oldukça zorlayabilir.
+            </p>
+            <div class="code-snippet">
+                <p>
+                    <span><</span>div style="font-size: 40px;"<span>></span>Birinci 'div'<span><</span>/div<span>></span>
+                </p>
+                <p>
+                    <span><</span>div style="font-size: 40px;"<span>></span>İkinci 'div'<span><</span>/div<span>></span>
+                </p>
+            </div>
+            <p>Yukarıdaki kod bloğu ile oluşturulan web sayfası aşağıdaki gibi bir sonuç vermektedir.</p>
+            <div class="image-container">
+                <img src="Screenshots/nonflex.png" height="80%" width="80%" alt="">
+            </div>
+            <p>
+                Görüldüğü gibi "Birinci 'div'" içeriği ile oluşturulan satırda yeterli boş alan bulunduğu
+                halde "İkinci 'div'" elementi otomatik olarak bir alt satırda oluşturuldu. <br><br>
+                Kod bloğundaki 'div'lerimize aşağıda gösterildiği gibi border ekleyerek kapladıkları alanları
+                daha rahat görebiliriz.  
+            </p>
+            <div class="code-snippet">
+                <p>
+                    <span><</span>div style="font-size: 40px; border: "1px black solid"<span>></span>Birinci 'div'<span><</span>/div<span>></span>
+                </p>
+                <p>
+                    <span><</span>div style="font-size: 40px; border: "1px black solid"<span>></span>İkinci 'div'<span><</span>/div<span>></span>
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="Screenshots/nonflex-bordered.png" height="80%" width="80%" alt="">
+            </div>
+            <p>
+                Container elemente tanımlanan flex özelliği ile container içerisinde bulunan elemanlar esnek bir yapıya kavuşur ve bu sayede 
+                kapladıkları alan, içerilerinde bulunan içeriklerin kapladığı alana indirgenir ve container içerisindeki satırlarda alt alta yerine yan yana
+                sıralanmaya başlarlar. <br><br>
+                Flex özelliğinin kod içerisindeki kullanımı ve verdiği sonuç aşağıda gösterilmiştir. 
+            </p>
+            <div class="code-snippet">
+                <p>
+                    <span><</span>div class="container" style="display: flex;"<span>></span>
+                </p>
+                <p>
+                        <span><</span>div style="font-size: 40px; border: "1px black solid"<span>></span>Birinci 'div'<span><</span>/div<span>></span>
+                </p>
+                <p>
+                        <span><</span>div style="font-size: 40px; border: "1px black solid"<span>></span>İkinci 'div'<span><</span>/div<span>></span>
+                </p>
+                <p>
+                    <span><</span>/div<span>></span>
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="Screenshots/flex-bordered.png" height="80%" width="80%" alt="">
+                <br><br><br>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            All rights reserved. Wissen Akademie Blog 2022.
+        </div>
+    </footer>
+</body>
+</html>
