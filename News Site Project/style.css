@@ -1,0 +1,39 @@
+.top-menu-lg{
+    background-color: #272829;
+    height: 70px;
+}
+
+.bot-menu-lg{
+    height: 35.19px;
+    background-color: #f06730 !important;
+}
+
+.social-logos i{
+    background-color: #282828 !important;
+    color: white !important;
+    font-size: 25px;
+    border-radius: 50%;
+    padding: 0.05em 0.07em;
+}
+
+.menu-sm{
+    height: 48.31px;
+    background-color: #272829 !important;
+}
+
+.fa{
+    color: #ffffff;
+}
+
+.offcanvas-header{
+    background-color: #272829;
+}
+
+.offcanvas-body{
+    background-color: #f3f3f3 !important;
+}
+
+.offcanvas-body i{
+    color: #272829;
+}
+
